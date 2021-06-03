@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="jenkins-cicdFlow" doc:id="23cd5ca5-bad2-4e96-8e36-87ee9e70a127" >
 		<http:listener doc:name="/cicd Listener" doc:id="50b717dd-d305-4139-b1fe-5f419d568b91" config-ref="HTTP_Listener_config" path="/cicd"/>
-		<set-payload value='#["Test Jenkins Pipeline - 3rd June"]' doc:name="CICD Test - Jenkins" doc:id="7daac23d-02e7-484a-add1-79de674fcf75" />
+		<set-payload value='#["Testing Jenkins Pipeline - 3rd June"]' doc:name="CICD Test - Jenkins" doc:id="7daac23d-02e7-484a-add1-79de674fcf75" />
 	</flow>
 </mule>
