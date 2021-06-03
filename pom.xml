@@ -39,7 +39,6 @@
 						<environment>Sandbox</environment>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
-						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				<classifier>mule-application</classifier>
                 <sharedLibraries>
