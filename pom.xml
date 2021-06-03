@@ -32,17 +32,22 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com/</uri>
-						<muleVersion>${app.runtime}</muleVersion>
-						<username>${username}</username>
-						<password>${password}</password>
-						<applicationName>${project.artifactId}</applicationName>
+						<muleVersion>4.3.0</muleVersion>
+						<username>28may-user</username>
+						<password>ATr@9552834556</password>
+						<applicationName>Jenkins-Demo</applicationName>
 						<environment>Sandbox</environment>
-						<workerType>${workerType}</workerType>
+						<workerType>Micro</workerType>
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
-						<region> ${region} </region>
 					</cloudHubDeployment>
 				<classifier>mule-application</classifier>
+                <sharedLibraries>
+                        <sharedLibrary>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
+                        </sharedLibrary>
+                    </sharedLibraries>
                 </configuration>
 			</plugin>
 		</plugins>
@@ -61,7 +66,18 @@
             <version>1.2.0</version>
             <classifier>mule-plugin</classifier>
         </dependency>
-	</dependencies>
+		<dependency>
+            <groupId>org.mule.connectors</groupId>
+            <artifactId>mule-db-connector</artifactId>
+            <version>1.8.3</version>
+            <classifier>mule-plugin</classifier>
+        </dependency>
+    	<dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.48</version>
+        </dependency>
+    </dependencies>
 
 	<repositories>
           <repository>
