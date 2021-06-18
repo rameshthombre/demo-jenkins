@@ -32,13 +32,15 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com/</uri>
-						<muleVersion>4.3.0</muleVersion>
-						<username>28may-user</username>
-						<password>ATr@9552834556</password>
-						<applicationName>Jenkins-Demo</applicationName>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>${username}</username>
+						<password>${password}</password>
+						<applicationName>${project.artifactId}</applicationName>
 						<environment>Sandbox</environment>
-						<workerType>Micro</workerType>
+						<workerType>${workerType}</workerType>
 						<workers>1</workers>
+						<objectStoreV2>true</objectStoreV2>
+						<region> ${region} </region>
 					</cloudHubDeployment>
 				<classifier>mule-application</classifier>
                 <sharedLibraries>
@@ -63,12 +65,6 @@
             <groupId>org.mule.connectors</groupId>
             <artifactId>mule-sockets-connector</artifactId>
             <version>1.2.0</version>
-            <classifier>mule-plugin</classifier>
-        </dependency>
-		<dependency>
-            <groupId>org.mule.connectors</groupId>
-            <artifactId>mule-db-connector</artifactId>
-            <version>1.8.3</version>
             <classifier>mule-plugin</classifier>
         </dependency>
     	<dependency>
