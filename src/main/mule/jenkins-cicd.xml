@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"message" : "Testing Jenkins Pipeline - June 28 Sun"
+	"message" : "Testing Jenkins Pipeline - June 28 Mon"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
